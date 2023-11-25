@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            width: 300px;
+            margin: 150px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(221, 33, 33, 0.9);
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .login-container input {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            background-color: gold;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Register</h2>
+    <form action="/login" method="post" onsubmit="showPopup(event)">
+        <label for="firstName">Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        <label for="user">Username</label>
+        <input type="text" id="user" name="user" placeholder="Enter your username" required>
+        <label for="regno">Registration number</label>
+        <input type="text" id="regno" name="regno" placeholder="Enter your registration number" required>
+        <label for="gender">Select your gender</label>
+
+         <select name="gender" id="gender">
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+           <option value="others">Others</option>
+         </select>
+        <br>
+        <br>
+        <label for="dob">Enter the DOB</label>
+            <input type="datetime-local" id="Test_DatetimeLocal">
+        <label for="contact">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+        <label for="phonenumber">Phone number</label>
+        <input type="text" id="email" name="email" placeholder="Enter your phone number" required>  
+        <label for="department">Select your department</label>
+
+         <select name="department" id="department">
+           <option value="MSc DS">MSc DS</option>
+           <option value="MSc EA">MSc EA</option>
+           <option value="MSc GNF">MSc GNF</option>
+           <option value="MBA">MBA</option>
+           <option value="LLM">LLM</option>
+           <option value="BBA LLB">BBA LLB</option>
+           <option value="BA LLB">BA LLB</option>
+           <option value="BSc DS">BSc DS</option>
+           <option value="BSc EA">BSc EA</option>
+           <option value="BSc GNF">BSc GNF</option>
+           <option value="BCom">BCom</option>
+           <option value="MA">MA</option>
+           <option value="BBA">BBA</option>
+         </select>
+        <br>
+        <br>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required >
+        <input type="password" id="pwd" name="pwd" placeholder="Confirm your password" required >
+
+        <br>
+        <br>
+
+        <button type="register">Register</button>
+        <button type="cancel">Cancel</button>
+    </form>
+</div>
+</body>
+</html>

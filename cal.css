@@ -1,0 +1,74 @@
+body {
+	background-color:black;
+	background-image: url("https://media.tenor.com/IvyuPtEfzhoAAAAC/matrix.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+.container {
+	width: 250px;
+	height: 400px;
+	margin: 80px auto;
+	border-radius: 10px;
+	background-color:whitesmoke;
+	box-shadow: 5px 5px 10px green,
+		-5px -5px 10px green;
+}
+h1{
+	color:white;
+	font: Impact;
+	font-style: italic;;
+
+}
+
+.cal-box {
+	width: 200px;
+	margin: 20px auto;
+}
+
+#display {
+	border: none;
+	outline: none;
+	color: black;
+	text-align: right;
+	font-weight: 600;
+	padding: 15px;
+	margin: 30px 0 20px 0;
+	background: transparent;
+	box-shadow: inset 2px 2px 5px silver,
+		inset -5px -5px 10px white;
+}
+
+.button {
+	margin: 15px 0 0 5px;
+	width: 42px;
+	height: 42px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: black;
+	box-shadow: 5px 5px 10px green,
+		-5px -5px 10px white;
+		color:white;
+	display: inline-block;
+
+}
+
+.button:active {
+	box-shadow: inset 1px 1px 2px aquamarine,
+		inset -1px -1px 2px aquamarine;
+}
+
+.clearButton {
+	color: white;
+	background-color: red;
+}
+
+.mathbutton {
+	color:red;
+	background-color:white;
+}

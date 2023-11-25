@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>java</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="number">number1</label>
+            <input type="number" name="number" id="number" placeholder="Enter the number 1">
+        </div>
+        <div>
+            <label for="number1">number2</label>
+            <input type="number" name="number1" id="number1" placeholder="Enter the number 2">
+        </div>
+        <div>
+            <input type="button" value="+" onclick="addNumbers()">
+        </div>
+        <div>
+            <label for="total">total</label>
+            <input type="text" name="total" readonly id="total">
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+
+    <script>
+        function addNumbers() {
+            var number1 = parseFloat(document.getElementById('number').value);
+            var number2 = parseFloat(document.getElementById('number1').value);
+            var total = number1 + number2;
+            document.getElementById('total').value = total;
+        }
+    </script>
+</body>
+
+</html>
